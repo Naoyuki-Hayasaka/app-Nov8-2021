@@ -38,7 +38,7 @@ const Header: FC = () => {
         ホーム
       </HeaderLink>
       <HeaderLink isselected={location.pathname === "/pokemon"} to="/pokemon">
-        pokemon
+        ポケモン
       </HeaderLink>
       <HeaderLink isselected={location.pathname === "/skills"} to="/skills">
         スキル
