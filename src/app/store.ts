@@ -1,4 +1,5 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import thunkMiddleware from "redux-thunk";
 import counterReducer from "../features/counter/counterSlice";
 import pokemonReducer from "../features/pokemon/pokemonSlice";
 
@@ -6,7 +7,8 @@ export const store = configureStore({
   reducer: {
     counter: counterReducer,
     pokemon: pokemonReducer
-  }
+  } //,
+  // middleware: [thunkMiddleware]
 });
 
 export type AppDispatch = typeof store.dispatch;
