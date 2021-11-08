@@ -7,8 +7,8 @@ export const store = configureStore({
   reducer: {
     counter: counterReducer,
     pokemon: pokemonReducer
-  } //,
-  // middleware: [thunkMiddleware]
+  },
+  middleware: [thunkMiddleware]
 });
 
 export type AppDispatch = typeof store.dispatch;
